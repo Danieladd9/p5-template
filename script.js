@@ -7,7 +7,7 @@ let manualHue = 0;
 function setup() {
   createCanvas(innerWidth, innerHeight);
   colorMode(HSB); // color mode "Hue Straturation and Brightness"
-  angleMode(Degrees); // angle mode ""
+  angleMode(DEGREES);// angle mode ""
   background(0);
 }
 
@@ -54,7 +54,7 @@ switch (event.key) { // a switch on the key
       manualHue += 15;
       break;
     case 'R' : 
-      autoHue = ! autoRotate // autoHue equal not autoHue
+      autoRotate = ! autoRotate // autoHue equal not autoHue
       break;
     case 'a' :
       autoRotate = false;
